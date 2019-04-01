@@ -6,7 +6,7 @@ Problem Statement: Implement Principal Component Analysis with Singular Vector D
 `lab3_io.h` and `lab3_io.c`: functions to read matrix from file and check the correctness of the result  
 `main_cuda.c`: function `main()`  
 `lab3_cuda.h`: header file for the functions to be implemented  
-`lab3_cuda.c`: implement the functions in this file  
+`lab3_cuda.c`: implement the function in this file  
 Refer to respective files for furthur details.  
 **Do not change the directory structure and prototype of functions.**
 
