@@ -5,9 +5,6 @@
 #include <malloc.h>
 #include <stdio.h>
 
-#include <cuda_runtime.h>
-#include <helper_cuda.h>
-
 
 /*
 To be implemented

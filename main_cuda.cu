@@ -36,8 +36,7 @@ int main(int argc, char const *argv[])
 
 	retention = atoi(argv[2]);	//retention = 90 means 90% of information should be retained
 
-	double start_time, end_time;
-	double computation_time;
+	float computation_time;
 
 	/*
 		-- Pre-defined function --
@@ -56,7 +55,8 @@ int main(int argc, char const *argv[])
 	SIGMA = (double*) malloc(sizeof(double) * N);
 	V_T = (double*) malloc(sizeof(double) * M*M);
 
-	start_time = omp_get_wtime();
+	cudaEvent_t start, stop;
+	cudaEventRecord(start);
 	
 	// /*
 	// 	*****************************************************
@@ -65,8 +65,8 @@ int main(int argc, char const *argv[])
 	// */
 	SVD_and_PCA(M, N, D, &U, &SIGMA, &V_T, &D_HAT, &K);
 
-	end_time = omp_get_wtime();
-	computation_time = ((double) (end_time - start_time));
+	cudaEventRecord(stop);
+	cudaEventElapsedTime(&computation_time, start, stop);
 	
 	/*
 		--Pre-defined functions --

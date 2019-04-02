@@ -12,7 +12,7 @@ Refer to respective files for furthur details.
 
 ## Building and Executing
 ```
-g++ -fopenmp -lm lab3_io.c lab3_cuda.c main_cuda.c -o pca
+nvcc -lm main_cuda.cu lab3_cuda.cu lab3_io.cu -o pca
 ```
 #### Command Line Arguments
 The program takes two command line arguments:
