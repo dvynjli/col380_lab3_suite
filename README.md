@@ -3,10 +3,10 @@ Problem Statement: Implement Principal Component Analysis with Singular Vector D
 
 ## Directories and files
 `testcase/`: contains python script `gen_testcase.py` for sample testcase generation  
-`lab3_io.h` and `lab3_io.c`: functions to read matrix from file and check the correctness of the result  
-`main_cuda.c`: function `main()`  
+`lab3_io.h` and `lab3_io.cu`: functions to read matrix from file and check the correctness of the result  
+`main_cuda.cu`: function `main()`  
 `lab3_cuda.h`: header file for the functions to be implemented  
-`lab3_cuda.c`: implement the function in this file  
+`lab3_cuda.cu`: implement the function in this file  
 Refer to respective files for furthur details.  
 **Do not change the directory structure and prototype of functions.**
 
@@ -19,7 +19,7 @@ The program takes two command line arguments:
 - arg1: input filename (consist M, N and D)  
 - arg2: retention (percentage of information to be retained by PCA) 
 
-Note that the retention percentage is integer.  Please refer to `main_cuda.c` for more details.  
+Note that the retention percentage is integer.  Please refer to `main_cuda.cu` for more details.  
 To run the program:
 ```
 ./pca <input filename> <retention>
@@ -54,7 +54,7 @@ Your program should perform SVD and PCA on the given input and store the results
 Refer to `lab3_cuda.h` for more details. **Your program should not output anything on `stdout`.**  
 
 ## Submission Instructions
-- You are supposed to submit only one file named `lab3_cuda.c/cpp`. Please make sure all the functions you have used are in this file.
+- You are supposed to submit only one file named `lab3_cuda.cu`. Please make sure all the functions you have used are in this file.
 - Do not submit other files
 - Your code should build and execute as per the instructions given above. Please make sure that your code doesn't need any Makefile.
 - Your program should not output anything in `stdout`.
