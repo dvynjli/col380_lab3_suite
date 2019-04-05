@@ -12,7 +12,8 @@ void SVD_and_PCA (int M,
         double** SIGMA, 
         double** V_T, 
         double** D_HAT, 
-        int *K) {
+        int *K,
+        int retention) {
     // write your code here
     
 }
