@@ -69,6 +69,7 @@ int main(int argc, char const *argv[])
 	SVD_and_PCA(M, N, D, &U, &SIGMA, &V_T, &D_HAT, &K, retention);
 
 	cudaEventRecord(stop);
+	cudaEventSynchronize(stop);
 	cudaEventElapsedTime(&computation_time, start, stop);
 	
 	/*
