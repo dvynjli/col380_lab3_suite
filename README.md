@@ -12,7 +12,7 @@ Refer to respective files for furthur details.
 
 ## Building and Executing
 ```
-nvcc -lm main_cuda.cu lab3_cuda.cu lab3_io.cu -o pca
+nvcc -lm -std=c++11 main_cuda.cu lab3_cuda.cu lab3_io.cu -o pca
 ```
 #### Command Line Arguments
 The program takes two command line arguments:
