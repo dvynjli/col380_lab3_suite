@@ -24,13 +24,13 @@ Arguments:
         --------------------------------------------------------------------------------------
         | D[0][0] | D[0][1] | ... | D[0][N-1] | D[1][0] | ... | D[1][N-1] | ... | D[M-1][N-1] |
         --------------------------------------------------------------------------------------
-    U : 1D array of N x N (or MxM) real matrix in row-major (to be computed)
+    U : 1D array of N x N (or M x M) real matrix in row-major (to be computed)
         --------------------------------------------------------------------------------------
         | U[0][0] | U[0][1] | ... | U[0][N-1] | U[1][0] | ... | U[1][N-1] | ... | U[N-1][N-1] |
         --------------------------------------------------------------------------------------
-    SIGMA : 1D array of N x M (or MxN) diagonal matrix of positive real numbers (to be computed)
+    SIGMA : 1D array of N x M (or M x N) diagonal matrix of positive real numbers (to be computed)
         format: consists only digonal elements
-        #elements in SIGMA is N
+        #elements in SIGMA is N (digonals will be N in both cases)
         -------------------------------------------------------------------
         | SIGMA[0][0] | SIGMA[1][1] | SIGMA[2][2] | ... | SIGMA[N-1][N-1] |
         -------------------------------------------------------------------

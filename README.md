@@ -46,7 +46,7 @@ The first line of the input file contains `M` followed by `N`. The second line c
 #### Output Specification
 Your program should perform SVD and PCA on the given input and store the results in the variables given in the program. We will check the correctness by calling the functions from the program. You should compute following matrices and values:  
 - U : N x N (or M x M, read note in `lab3_cuda.h`) real matrix (to be computed by SVD)
-- SIGMA : N x M (or M x M, read note in `lab3_cuda.h`) diagonal matrix of positive real numbers ( to be computed by SVD)
+- SIGMA : N x M (or M x N, read note in `lab3_cuda.h`) diagonal matrix of positive real numbers ( to be computed by SVD). Consists only digonal elements, #elements = N
 - V_T : M x M (or M x M, read note in `lab3_cuda.h`) real matrix (to be computed by SVD)
 - SIGMAm : #rows in SIGMA, same as rows in matrix used for SVD (to be computed)
 - SIGMAn : #columns in SIGMA, same as rows in matrix used for SVD (to be computed)
