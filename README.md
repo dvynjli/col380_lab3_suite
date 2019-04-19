@@ -53,9 +53,9 @@ Your program should perform SVD and PCA on the given input and store the results
 - K : number of columns (features) in reduced matrix D_HAT
 - D_HAT : reduced matrix (to be computed by PCA)
 
-Refer to `lab3_cuda.h` for more details. **Your program should not output anything on `stdout`.** 
+Refer to `lab3_cuda.h` for more details. **Your program should not output anything on `stdout`.**
 
-Important: read note in `lab3_cuda.h` for dimesions of U, SIGMA, V_T and clearifictaion of variables SIGMAm and SIGMAn
+**Important: read note in `lab3_cuda.h` for dimesions of U, SIGMA, V_T and clearifictaion of variables SIGMAm and SIGMAn**
 
 ## Submission Instructions
 - You are supposed to submit only one file named `lab3_cuda.cu`. Please make sure all the functions you have used are in this file.
