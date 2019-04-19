@@ -46,14 +46,16 @@ The first line of the input file contains `M` followed by `N`. The second line c
 #### Output Specification
 Your program should perform SVD and PCA on the given input and store the results in the variables given in the program. We will check the correctness by calling the functions from the program. You should compute following matrices and values:  
 - U : N x N (or M x M, read note in `lab3_cuda.h`) real matrix (to be computed by SVD)
-- SIGMA : N x M (or M x N, read note in `lab3_cuda.h`) diagonal matrix of positive real numbers ( to be computed by SVD). Consists only digonal elements, #elements = N
+- SIGMA : N x M (or M x N, read note in `lab3_cuda.h`) diagonal matrix of positive real numbers ( to be computed by SVD). Consists only digonal elements, #elements = N. Hence, you should return a vector of N elements
 - V_T : M x M (or M x M, read note in `lab3_cuda.h`) real matrix (to be computed by SVD)
 - SIGMAm : #rows in SIGMA, same as rows in matrix used for SVD (to be computed)
 - SIGMAn : #columns in SIGMA, same as rows in matrix used for SVD (to be computed)
 - K : number of columns (features) in reduced matrix D_HAT
 - D_HAT : reduced matrix (to be computed by PCA)
 
-Refer to `lab3_cuda.h` for more details. **Your program should not output anything on `stdout`.**  
+Refer to `lab3_cuda.h` for more details. **Your program should not output anything on `stdout`.** 
+
+Important: read note in `lab3_cuda.h` for dimesions of U, SIGMA, V_T and clearifictaion of variables SIGMAm and SIGMAn
 
 ## Submission Instructions
 - You are supposed to submit only one file named `lab3_cuda.cu`. Please make sure all the functions you have used are in this file.
