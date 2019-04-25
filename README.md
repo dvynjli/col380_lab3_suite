@@ -2,11 +2,11 @@
 Problem Statement: Implement Principal Component Analysis with Singular Vector Decomposition in CUDA
 
 ## Directories and files
-`testcase/`: contains python script `gen_testcase.py` for sample testcase generation  
-`lab3_io.h` and `lab3_io.cu`: functions to read matrix from file and check the correctness of the result  
-`main_cuda.cu`: function `main()`  
-`lab3_cuda.h`: header file for the functions to be implemented  
-`lab3_cuda.cu`: implement the function in this file  
+- `testcase/`: contains python script `gen_testcase.py` for sample testcase generation  
+- `lab3_io.h` and `lab3_io.cu`: functions to read matrix from file and check the correctness of the result. This file also contains a dummy function to check the dimensions of the returned matrix
+- `main_cuda.cu`: function `main()`  
+- `lab3_cuda.h`: header file for the functions to be implemented  
+- `lab3_cuda.cu`: implement the function in this file  
 Refer to respective files for furthur details.  
 **Do not change the directory structure and prototype of functions.**
 

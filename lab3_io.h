@@ -63,8 +63,8 @@ void write_result (int M,
 
 /* 
 Function to check the format of output code.
-You can call it from main to check if the dimentions of 
-output matches with our expected dimentions.
+You can call it from main to check if the dimensions of 
+output matches with our expected dimensions.
 This is a dummy function. It is not the function that 
 will be used for evaluation.
 */
