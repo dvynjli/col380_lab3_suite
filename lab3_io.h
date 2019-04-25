@@ -61,4 +61,22 @@ void write_result (int M,
 		double* D_HAT,
 		double computation_time);
 
+/* 
+Function to check the format of output code.
+You can call it from main to check if the dimentions of 
+output matches with our expected dimentions.
+This is a dummy function. It is not the function that 
+will be used for evaluation.
+*/
+void format_checker (int M, 
+		int N, 
+		double* D, 
+		double* U, 
+		double* SIGMA, 
+		double* V_T,
+		int SIGMAm, 
+		int SIGMAn, 
+		int K, 
+		double* D_HAT);
+
 #endif
